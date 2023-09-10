@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/stylelogin.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/img-logo.png" alt="imagen logo" class="logo">
+        <h1>Bienvenidos</h1>
+    </header>
+    <main>
+        <div class="form-loguin">
+            <h2>Iniciar de sesión</h2>
+            <div class="contenedor-loguin">
+                <div >
+                    <label for="usuario">Usuario:</label>
+                    <input type="email" id="usuario" name="usuario">
+                    <p id="errorusuario"></p>
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña">
+                    <p id="errorcontraseña"></p>
+                </div>
+            </div>
+            <div class="boton">
+                <a id="btningresar" >Ingresar</a>
+                <a href="./registro.html">Registrar</a>
+            </div>
+                <ul class="redes">
+                    <li> <img src="./imagenes/logo-face.png" alt="Logo facebook"> Clinica_veterinaria </li>
+                    <li> <img src="./imagenes/logo-ing.png" alt="Logo instagram"> Clinica_Veterinaria </li>
+                </ul>
+        </div>
+    </main>
+    <script src="./js/login.js" ></script>
+</body>
+</html>
