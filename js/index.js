@@ -126,8 +126,7 @@ const productos = [
   }
   
   const cargarusuario=()=>{
-    userloguin.textContent= ( usuario[0].nombre + "  " + usuario[0].apellido);
-    
+    userloguin.textContent= usuario[0].nombre.toUpperCase();
   }
   const renderizarproduct = () => {
     contproduc.innerHTML = productos.map((productos) => crearhtml(productos)).join("");

@@ -44,28 +44,28 @@ const isPassSecure = (input) => {
 
 
 const validarnombre=()=>{
-    if(!isEmpty(nombre))
-    {
-        errornombre.textContent = " ";
-        return true;
-    }
-    else
-    {
+    if(isEmpty(nombre)){
         errornombre.textContent = "Dato obligatorio";
-        return false;
+        return false
     }
+    if(!isBetween(nombre, 3, 12)){
+        errornombre.textContent = "El nombre debe tener entre 3 y 12 caracteres";
+        return false
+    }
+    errornombre.textContent = " ";
+    return true
 }
 const validarapellido=()=>{
-    if(!isEmpty(apellido))
-    {
-        errorapellido.textContent = " ";
-        return true;
-    }
-    else
-    {
+    if(isEmpty(apellido)){
         errorapellido.textContent = "Dato obligatorio";
-        return false;
+        return false
     }
+    if(!isBetween(apellido, 3, 12)){
+        errorapellido.textContent = "El apellido debe tener entre 3 y 12 caracteres";
+        return false
+    }
+    errorapellido.textContent = " ";
+    return true
 }
 const validaremail=()=>{
     if(isEmpty(email))
