@@ -74,7 +74,7 @@ const validaremail=()=>{
         return false;
     }
     if(!isEmailValid(email)){
-        erroremail.textContent = "Formato invalido";
+        erroremail.textContent = "Ingrese un Email";
         return false
     }
     if(isExistingMail(email)){
